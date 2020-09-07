@@ -1,0 +1,22 @@
+{
+  "name": "wx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib -w",
+    "ug":"uglifyjs lib/index.js -m -c -o lib/index.min.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "uglify-js": "^3.10.3"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.11.5"
+  }
+}
